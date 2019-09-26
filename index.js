@@ -11,6 +11,8 @@ var DIRECTIVE_REGEX = /^[\/\s#]*?=\s*?((?:require|include)(?:_tree|_directory)?)
 var requiredFiles = {},
     extensions = [];
 
+console.log("Test change");
+
 module.exports = function (params) {
     var params = params || {};
     if (params.extensions) {
