@@ -8,10 +8,10 @@ var fs = require('fs'),
 var DIRECTIVE_REGEX = /^[\/\s#]*?=\s*?((?:require|include)(?:_tree|_directory)?)\s+(.*$)/mg; //Note to Wiledal: Allowed asterisks, single quotes, and double quotes
 // Note to wiledal: I replaced the hidden file regex just with a simple check if the first character in the file name is a period. Do you know of use cases where you would want it to be more complicated than that?
 
+console.info("Another change...")
+
 var requiredFiles = {},
     extensions = [];
-
-console.log("Test change");
 
 module.exports = function (params) {
     var params = params || {};
